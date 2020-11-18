@@ -1,5 +1,5 @@
 # DiscordCo
-we are not affeliated with discord, tiny.cc, or grabify
+we are not affiliated with discord, tiny.cc, or grabify
 ---
 to redirect to a tiny.cc url:<br>
 domain.com/attachments/Tiny.ccUrlCode/the-rest-of-the-dsicord-url/image.png<br>
