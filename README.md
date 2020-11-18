@@ -7,7 +7,7 @@ or<br>
 to redirect to a grabify url:<br>
 domain.com/attachment/grabify.urlUrlCode/the-rest-of-the-dsicord-url/image.png<br>
 ---
-##install
+## install
 git clone https://github.com/cyleja1234/DiscordCo.git<br>
 cd Discord-Co<br>
 npm i<br>
